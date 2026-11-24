@@ -36,11 +36,10 @@ const steps = [...document.querySelectorAll('.story-step')]
 const observer = new IntersectionObserver((entries) => {
   const visible = entries.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0]
   if (visible) setStep(Number(visible.target.dataset.step))
-}, { threshold: [0.25, 0.5, 0.75] })
+}, { threshold: 0, rootMargin: '-44% 0px -44% 0px' })
 steps.forEach(el => observer.observe(el))
 
 document.querySelector('.restart').addEventListener('click', () => { location.hash = 'top'; setStep(0) })
-document.querySelector('.begin').addEventListener('click', () => setTimeout(() => setStep(0), 200))
 document.querySelector('.again').addEventListener('click', () => setStep(0))
 
 let pointerFrame
