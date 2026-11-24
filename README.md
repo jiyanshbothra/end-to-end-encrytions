@@ -7,15 +7,15 @@ A scroll-driven introduction to end-to-end encryption, built with Vite and vanil
 Install Node.js, then run:
 
 ```sh
-npm install
-npm run dev
+npm.cmd install
+npm.cmd run dev
 ```
 
-Create a static production build with `npm run build`. Preview it with `npm run preview`.
+Create a static production build with `npm.cmd run build`. Preview it with `npm.cmd run preview`.
 
 ## Deploy
 
-The `dist/` directory contains the static site after a build. It can be deployed to GitHub Pages, Netlify, or another static host. For GitHub Pages, configure the repository's Pages source to use a deployment workflow that publishes `dist/`.
+The `dist/` directory contains the static site after a build. The included GitHub Actions workflow builds and publishes it on pushes to `main`. In the repository, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. The workflow also attempts to enable Pages automatically, which requires repository admin access.
 
 ## About
 
