@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090a0c" />
+    <meta name="description" content="An interactive, visual guide to end-to-end encryption." />
+    <title>Only between us — End-to-end encryption</title>
+  </head>
+  <body>
+    <main id="app">
+      <section class="intro" aria-label="Introduction">
+        <a class="wordmark" href="#top" aria-label="Only between us home">ob.</a>
+        <div class="intro-copy">
+          <p class="intro-kicker">A visual guide to private messages</p>
+          <h1>Only between<br />you <span class="and">&</span> them.</h1>
+          <p class="intro-note">A message leaves your hands. Follow what happens before it arrives.</p>
+          <a class="begin" href="#top">Begin the journey <span aria-hidden="true">↘</span></a>
+        </div>
+        <span class="intro-index">A lesson in end-to-end encryption</span>
+      </section>
+
+      <section class="journey" id="top" aria-label="The encryption journey">
+        <header class="topbar"><a class="wordmark" href="#top">ob.</a><span>Only between us</span><button class="restart" type="button">Start over</button></header>
+        <div class="stage">
+          <div class="lesson-copy" aria-live="polite">
+            <p class="chapter" id="chapter">A message begins</p>
+            <h2 id="heading">Words, before<br />they travel.</h2>
+            <p id="description">You type a message on your phone. At this moment, it is plain text: readable words held on your device.</p>
+            <div class="lesson-count"><span id="step-count">01</span><span class="count-rule"></span><span>06</span></div>
+          </div>
+          <div class="device-wrap" id="device-wrap">
+            <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+            <div class="float-key key-one" aria-hidden="true">⌁</div><div class="float-key key-two" aria-hidden="true">⌑</div>
+            <div class="phone" id="phone" tabindex="0" aria-label="Interactive phone illustration">
+              <div class="phone-frame"><div class="island"></div><div class="phone-status"><span>9:41</span><span>● ▰</span></div>
+                <div class="screen">
+                  <div class="chat-head"><span class="back-mark">‹</span><div class="avatar">M</div><div><strong>Maya</strong><small>Messages are private</small></div></div>
+                  <div class="chat-date">TODAY 9:41 AM</div>
+                  <div class="chat-flow" id="chat-flow"><div class="bubble incoming">Hey, are we still on for tonight?</div><div class="bubble outgoing" id="message-bubble">Meet me by the little bookshop at seven.</div></div>
+                  <div class="device-visual" id="device-visual"><span class="visual-lock">⌑</span><span class="visual-label">Only you can read this</span></div>
+                  <div class="composer"><span>iMessage</span><span class="send">↑</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="receiver-phone" id="receiver-phone" aria-hidden="true"><span class="receiver-glint">M</span></div>
+            <div class="data-fragment" id="data-fragment" aria-hidden="true">x9#k·2p!v0_8</div>
+          </div>
+          <div class="scroll-hint"><span>Scroll to follow the message</span><span class="scroll-line"></span></div>
+        </div>
+        <div class="story-rail" id="story-rail">
+          <article class="story-step active" data-step="0"></article><article class="story-step" data-step="1"></article><article class="story-step" data-step="2"></article><article class="story-step" data-step="3"></article><article class="story-step" data-step="4"></article><article class="story-step" data-step="5"></article>
+        </div>
+      </section>
+
+      <section class="ending" id="ending">
+        <div class="ending-content"><p class="ending-kicker">End to end</p><h2>Only the people<br />in the conversation.</h2><p class="ending-body">Your device locks the message. The network carries it. Their device opens it. The service in the middle can deliver the package, but it does not hold the key to read what is inside.</p><div class="recap"><span>YOUR DEVICE <b>→</b> encrypted message <b>→</b> THEIR DEVICE</span></div><a class="again" href="#top">Experience it again <span aria-hidden="true">↗</span></a></div>
+        <footer><span>Only between us</span><span>Made to make privacy understandable.</span><a href="https://github.com/jiyanshbothra/end-to-end-encrytions">View the project on GitHub ↗</a></footer>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

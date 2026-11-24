@@ -1,0 +1,14 @@
+{
+  "name": "end-to-end-encryption",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build --base=/end-to-end-encrytions/",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "vite": "^6.4.1"
+  }
+}
